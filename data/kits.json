@@ -1,0 +1,104 @@
+{
+  "kits": [
+    {
+      "id": "garden",
+      "name": "Garden",
+      "label": "EXAMPLE",
+      "emoji": "🌸",
+      "desc": "Soft earthy kicks, leafy hats, blossom FX",
+      "pads": [
+        {"id":"kick","name":"Dirt Kick","kind":"kick","hue":28},
+        {"id":"snare","name":"Seed Snare","kind":"snare","hue":45},
+        {"id":"hatc","name":"Leaf Hat","kind":"hat","hue":120},
+        {"id":"hato","name":"Petal Open","kind":"hatopen","hue":140},
+        {"id":"tomlo","name":"Root Tom","kind":"tom","hue":30,"freq":90},
+        {"id":"tommid","name":"Stem Tom","kind":"tom","hue":80,"freq":140},
+        {"id":"tomhi","name":"Bloom Tom","kind":"tom","hue":330,"freq":220},
+        {"id":"clap","name":"Pollen Clap","kind":"clap","hue":50},
+        {"id":"perc1","name":"Bee Buzz","kind":"perc","hue":50,"freq":400},
+        {"id":"perc2","name":"Dew Drop","kind":"perc","hue":190,"freq":880},
+        {"id":"perc3","name":"Twig Click","kind":"click","hue":25},
+        {"id":"perc4","name":"Cricket","kind":"perc","hue":100,"freq":1200},
+        {"id":"fx1","name":"Whoosh Wind","kind":"whoosh","hue":200},
+        {"id":"fx2","name":"Rain Soft","kind":"noise","hue":210},
+        {"id":"fx3","name":"Chime","kind":"chime","hue":280},
+        {"id":"fx4","name":"Bird Chirp","kind":"chirp","hue":55}
+      ]
+    },
+    {
+      "id": "space",
+      "name": "Space",
+      "label": "EXAMPLE",
+      "emoji": "🚀",
+      "desc": "Deep thrusters, laser hats, comet trails",
+      "pads": [
+        {"id":"kick","name":"Thruster","kind":"kick","hue":220,"freq":48},
+        {"id":"snare","name":"Hull Hit","kind":"snare","hue":200},
+        {"id":"hatc","name":"Laser Hat","kind":"hat","hue":180},
+        {"id":"hato","name":"Plasma Open","kind":"hatopen","hue":190},
+        {"id":"tomlo","name":"Moon Tom","kind":"tom","hue":240,"freq":80},
+        {"id":"tommid","name":"Orbit Tom","kind":"tom","hue":260,"freq":130},
+        {"id":"tomhi","name":"Star Tom","kind":"tom","hue":280,"freq":200},
+        {"id":"clap","name":"Airlock","kind":"clap","hue":210},
+        {"id":"perc1","name":"Beep","kind":"perc","hue":160,"freq":660},
+        {"id":"perc2","name":"Ping","kind":"perc","hue":175,"freq":990},
+        {"id":"perc3","name":"Tick","kind":"click","hue":200},
+        {"id":"perc4","name":"Zap","kind":"perc","hue":300,"freq":1400},
+        {"id":"fx1","name":"Warp","kind":"whoosh","hue":260},
+        {"id":"fx2","name":"Static","kind":"noise","hue":220},
+        {"id":"fx3","name":"Signal","kind":"chime","hue":190},
+        {"id":"fx4","name":"Comet","kind":"chirp","hue":40}
+      ]
+    },
+    {
+      "id": "arcade",
+      "name": "Arcade",
+      "label": "EXAMPLE",
+      "emoji": "👾",
+      "desc": "Chiptune kicks, 8-bit hats, power-up FX",
+      "pads": [
+        {"id":"kick","name":"8-Bit Kick","kind":"kick","hue":320,"freq":70,"square":true},
+        {"id":"snare","name":"Coin Snare","kind":"snare","hue":50},
+        {"id":"hatc","name":"Blip Hat","kind":"hat","hue":300},
+        {"id":"hato","name":"Power Open","kind":"hatopen","hue":310},
+        {"id":"tomlo","name":"Boss Tom","kind":"tom","hue":0,"freq":100,"square":true},
+        {"id":"tommid","name":"Level Tom","kind":"tom","hue":30,"freq":160,"square":true},
+        {"id":"tomhi","name":"Hi-Score","kind":"tom","hue":60,"freq":240,"square":true},
+        {"id":"clap","name":"Bonus Clap","kind":"clap","hue":45},
+        {"id":"perc1","name":"Jump","kind":"perc","hue":120,"freq":520,"square":true},
+        {"id":"perc2","name":"Coin","kind":"perc","hue":55,"freq":880,"square":true},
+        {"id":"perc3","name":"Select","kind":"click","hue":280},
+        {"id":"perc4","name":"Hit","kind":"perc","hue":10,"freq":1100,"square":true},
+        {"id":"fx1","name":"Warp Pipe","kind":"whoosh","hue":140},
+        {"id":"fx2","name":"Glitch","kind":"noise","hue":300},
+        {"id":"fx3","name":"1-UP","kind":"chime","hue":120},
+        {"id":"fx4","name":"Game Over","kind":"chirp","hue":0}
+      ]
+    },
+    {
+      "id": "rain",
+      "name": "Rain",
+      "label": "EXAMPLE",
+      "emoji": "🌧️",
+      "desc": "Thunder kicks, splash snares, storm FX",
+      "pads": [
+        {"id":"kick","name":"Thunder","kind":"kick","hue":230,"freq":42},
+        {"id":"snare","name":"Splash","kind":"snare","hue":200},
+        {"id":"hatc","name":"Drip Hat","kind":"hat","hue":190},
+        {"id":"hato","name":"Puddle Open","kind":"hatopen","hue":195},
+        {"id":"tomlo","name":"Cloud Tom","kind":"tom","hue":210,"freq":85},
+        {"id":"tommid","name":"Mist Tom","kind":"tom","hue":200,"freq":135},
+        {"id":"tomhi","name":"Sparkle","kind":"tom","hue":185,"freq":210},
+        {"id":"clap","name":"Clap Rain","kind":"clap","hue":205},
+        {"id":"perc1","name":"Drop","kind":"perc","hue":195,"freq":700},
+        {"id":"perc2","name":"Ripple","kind":"perc","hue":180,"freq":950},
+        {"id":"perc3","name":"Patter","kind":"click","hue":210},
+        {"id":"perc4","name":"Plink","kind":"perc","hue":170,"freq":1300},
+        {"id":"fx1","name":"Gust","kind":"whoosh","hue":215},
+        {"id":"fx2","name":"Downpour","kind":"noise","hue":220},
+        {"id":"fx3","name":"Bell Rain","kind":"chime","hue":200},
+        {"id":"fx4","name":"Distant Bird","kind":"chirp","hue":60}
+      ]
+    }
+  ]
+}

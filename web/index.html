@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="theme-color" content="#1a3a2a"/>
+<title>Beat Garden</title>
+<style>/*__CSS__*/</style>
+</head>
+<body>
+<div id="app">
+  <header class="top">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">🌷</span>
+      <div>
+        <h1>Beat Garden</h1>
+        <p class="tag">Tap pads · grow grooves · kid-friendly</p>
+      </div>
+    </div>
+    <div class="kit-pill" id="kitPill">🌸 Garden · EXAMPLE</div>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <a href="#play" class="tab" data-screen="play">Play</a>
+    <a href="#seq" class="tab" data-screen="seq">Sequencer</a>
+    <a href="#kits" class="tab" data-screen="kits">Kits</a>
+    <a href="#about" class="tab" data-screen="about">About</a>
+  </nav>
+
+  <main>
+    <section id="screen-play" class="screen" hidden>
+      <div class="viz-wrap">
+        <canvas id="viz" width="720" height="160" aria-label="Beat visualizer"></canvas>
+      </div>
+      <div class="transport">
+        <button type="button" class="btn big" id="btnPlay" aria-label="Play sequencer">▶ Play</button>
+        <button type="button" class="btn" id="btnStop" aria-label="Stop">⏹ Stop</button>
+        <label class="bpm-wrap">BPM
+          <input type="range" id="bpm" min="60" max="180" value="110" />
+          <span id="bpmVal">110</span>
+        </label>
+        <label class="steps-wrap">Steps
+          <select id="stepCount">
+            <option value="8">8</option>
+            <option value="16" selected>16</option>
+          </select>
+        </label>
+      </div>
+      <div class="pad-grid" id="padGrid" role="group" aria-label="Drum pads"></div>
+      <p class="hint">Tap pads · keys <kbd>1</kbd>–<kbd>0</kbd> <kbd>Q</kbd>–<kbd>Y</kbd> · save pattern in Sequencer</p>
+    </section>
+
+    <section id="screen-seq" class="screen" hidden>
+      <div class="seq-head">
+        <h2>Sequencer</h2>
+        <div class="seq-actions">
+          <button type="button" class="btn" id="btnRecord">💾 Save pattern</button>
+          <button type="button" class="btn ghost" id="btnClear">Clear</button>
+          <button type="button" class="btn big" id="btnPlay2">▶ Play</button>
+        </div>
+      </div>
+      <p class="hint">Tap cells to toggle · current kit pads as rows · EXAMPLE patterns loadable</p>
+      <div class="seq-scroll">
+        <div class="seq-grid" id="seqGrid"></div>
+      </div>
+      <div class="seq-status" id="seqStatus">Pattern: empty</div>
+    </section>
+
+    <section id="screen-kits" class="screen" hidden>
+      <h2>EXAMPLE Kits</h2>
+      <p class="hint">All kits are labeled EXAMPLE — pure Web Audio, no downloads.</p>
+      <div class="kit-list" id="kitList"></div>
+    </section>
+
+    <section id="screen-about" class="screen" hidden>
+      <h2>About Beat Garden</h2>
+      <div class="about-card">
+        <p><strong>Beat Garden</strong> is a fun offline drum pad + reactive visualizer for Char and Vic — tap on iPad/iPhone Safari or any browser.</p>
+        <ul>
+          <li>16 colorful pads (kick / snare / hat / tom / perc / fx)</li>
+          <li>Bloom visualizer reacts to every hit</li>
+          <li>8- or 16-step sequencer with BPM</li>
+          <li>4 EXAMPLE kits: Garden, Space, Arcade, Rain</li>
+          <li>Saves last pattern in localStorage</li>
+        </ul>
+        <p class="muted">TokenMax burn build · pure client-side Web Audio · no cloud · no CDN samples required.</p>
+        <p class="muted">Keyboard: number row + QWERTY map to the 16 pads.</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="audioGate" class="gate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+    <div class="gate-card">
+      <div class="gate-emoji" aria-hidden="true">🌻</div>
+      <h2 id="gateTitle">Tap to start audio</h2>
+      <p>Browsers need a tap before sound can play. Ready when you are!</p>
+      <button type="button" class="btn huge" id="btnStartAudio">Start Beat Garden</button>
+    </div>
+  </div>
+</div>
+
+<script>
+window.__KITS__ = /*__KITS__*/ null /*__/KITS__*/;
+</script>
+<script>/*__APP__*/</script>
+</body>
+</html>
