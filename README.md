@@ -1,6 +1,6 @@
 # Beat Garden
 
-Kid-friendly Web Audio drum pad + reactive bloom visualizer for Boyd (TokenMax burn). Char and Vic can tap on iPad/iPhone Safari — pure client-side oscillators/noise, no CDN samples.
+Kid-friendly Web Audio drum pad + reactive bloom visualizer for Boyd (TokenMax burn). Alex and Sam can tap on iPad/iPhone Safari — pure client-side oscillators/noise, no CDN samples.
 
 **Hard rule:** offline-first playground. Patterns live in `localStorage`. No cloud agents. No external audio CDN for core play.
 
